@@ -6,7 +6,6 @@ public class Player {
     int number;
 
     void guess(int bound) {
-        Random r = new Random();
         number = random.nextInt(bound);
     }
 }
