@@ -8,10 +8,16 @@ public class GuessGame {
 
     void start () {
         Random random = new Random();
+        p1 = new Player();
+        p2 = new Player();
+        p3 = new Player();
+
         System.out.println("Я загадываю число от 0 до " + MAX);
         int number = random.nextInt(MAX);
 
+        System.out.println();
         while (true) {
+            System.out.println("Число которое нужно угадать " + number);
             p1.guess(MAX);
             p2.guess(MAX);
             p3.guess(MAX);
